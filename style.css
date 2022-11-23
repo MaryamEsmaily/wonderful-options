@@ -9,9 +9,13 @@ a {
   text-decoration: none;
 }
 
+/*  */
+
 .option-details-title {
   border-radius: 0 0 40px 40px;
 }
+
+/* flip down */
 
 .flipdown .rotor-group-heading {
   display: none;
@@ -21,10 +25,19 @@ a {
   font-size: 1rem;
 }
 
+/*  */
+
 .options {
   padding: 12px;
 }
 .active {
   background-color: #ee5661;
   color: white;
+}
+
+.option-details {
+  display: none;
+}
+.option-details[data-option-detail="3"] {
+  display: unset;
 }
