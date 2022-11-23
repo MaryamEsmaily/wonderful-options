@@ -20,3 +20,11 @@ a {
 .flipdown .rotor-group .rotor {
   font-size: 1rem;
 }
+
+.options {
+  padding: 12px;
+}
+.active {
+  background-color: #ee5661;
+  color: white;
+}
