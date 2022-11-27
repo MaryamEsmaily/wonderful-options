@@ -56,7 +56,7 @@
                     زمان باقیمانده تا پایان تخفیف
                   </div>
                   <div class="flipdown">
-                    <div id="flipdown" class="flipdown mt-3"></div>
+                    <div id="first-flipdown" class="flipdown mt-3"></div>
                   </div>
                 </div>
               </div>
@@ -93,7 +93,7 @@
                     زمان باقیمانده تا پایان تخفیف
                   </div>
                   <div class="flipdown">
-                    <div id="flipdown" class="flipdown mt-3"></div>
+                    <div id="second-flipdown" class="flipdown mt-3"></div>
                   </div>
                 </div>
               </div>
@@ -128,7 +128,7 @@
                     زمان باقیمانده تا پایان تخفیف
                   </div>
                   <div class="flipdown">
-                    <div id="flipdown" class="flipdown mt-3"></div>
+                    <div id="third-flipdown" class="flipdown mt-3"></div>
                   </div>
                 </div>
               </div>
@@ -163,7 +163,7 @@
                     زمان باقیمانده تا پایان تخفیف
                   </div>
                   <div class="flipdown">
-                    <div id="flipdown" class="flipdown mt-3"></div>
+                    <div id="fourth-flipdown" class="flipdown mt-3"></div>
                   </div>
                 </div>
               </div>
@@ -198,7 +198,7 @@
                     زمان باقیمانده تا پایان تخفیف
                   </div>
                   <div class="flipdown">
-                    <div id="flipdown" class="flipdown mt-3"></div>
+                    <div id="fifth-flipdown" class="flipdown mt-3"></div>
                   </div>
                 </div>
               </div>
@@ -235,7 +235,7 @@
                     زمان باقیمانده تا پایان تخفیف
                   </div>
                   <div class="flipdown">
-                    <div id="flipdown" class="flipdown mt-3"></div>
+                    <div id="sixth-flipdown" class="flipdown mt-3"></div>
                   </div>
                 </div>
               </div>
@@ -309,11 +309,12 @@
     <script>
       // 31/12/2022
       const datetime = 1672516830;
-      var flipdown = new FlipDown(datetime);
-      flipdown.start();
-      flipdown.ifEnded(() => {
-        console.log("The countdown has ended!");
-      });
+      new FlipDown(datetime, "first-flipdown").start();
+      new FlipDown(datetime, "second-flipdown").start();
+      new FlipDown(datetime, "third-flipdown").start();
+      new FlipDown(datetime, "fourth-flipdown").start();
+      new FlipDown(datetime, "fifth-flipdown").start();
+      new FlipDown(datetime, "sixth-flipdown").start();
     </script>
   </body>
 </html>
