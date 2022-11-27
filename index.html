@@ -6,294 +6,245 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wonderful Options</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
     <link rel="stylesheet" href="css/flipdown/flipdown.css" />
     <script src="js/flipdown/flipdown.js"></script>
   </head>
-  <body class="bg-warning bg-opacity-10">
+  <body>
     <!-- start html -->
 
-    <div class="container">
-      <div class="rounded-2 mt-5 overflow-hidden">
-        <!-- option details -->
-        <div class="row">
-          <div
-            data-option-detail="1"
-            class="col-9 bg-white option-details show-details"
-          >
-            <div class="bg-white position-relative">
-              <div
-                class="option-details-title bg-danger fs-3 d-inline-block px-5 py-2 text-white mx-3"
-              >
-                <div class="">پیشنهاد شگفت انگیز</div>
-              </div>
+    <div class="card">
+      <!-- option details -->
+      <div class="row">
+        <div
+          data-option-detail="1"
+          class="first-column option-details show-details"
+        >
+          <div class="card-details">
+            <div class="option-details-title">
+              <div class="">پیشنهاد شگفت انگیز</div>
             </div>
-            <div class="d-flex justify-content-between mt-5">
-              <img class="w-100" src="" alt="option-image" />
-              <div class="w-100 px-5">
-                <div class="option-detail-name fs-4">
-                  تلویزیون سامسونگ 50 اینچ
+          </div>
+          <div class="card-option-details">
+            <img class="option-details-image" src="" alt="option-image" />
+            <div class="option-details-info">
+              <div class="option-detail-name">تلویزیون سامسونگ 50 اینچ</div>
+              <div class="option-detail-info">
+                <div class="detail-last-info">
+                  <div class="last-info-price">1,054,000</div>
+                  <div class="last-info-text">تومان</div>
                 </div>
-                <div class="my-5">
-                  <div class="d-flex align-items-center fs-5">
-                    <div class="text-decoration-line-through">1,054,000</div>
-                    <div class="me-2 text-danger">تومان</div>
-                  </div>
-                  <div class="d-flex align-items-center fs-4 mt-2">
-                    <div class="fw-bold">1,200,000</div>
-                    <div class="me-2 text-success">تومان</div>
-                  </div>
+                <div class="detail-current-info">
+                  <div class="current-info-price">1,200,000</div>
+                  <div class="current-info-text">تومان</div>
                 </div>
+              </div>
 
-                <hr class="w-100 text-black" />
-                <div>
-                  <div class="text-center text-secondary">
-                    زمان باقیمانده تا پایان تخفیف
-                  </div>
-                  <div class="flipdown">
-                    <div id="first-flipdown" class="flipdown mt-3"></div>
-                  </div>
+              <hr />
+              <div>
+                <div class="card-option-timing">
+                  زمان باقیمانده تا پایان تخفیف
+                </div>
+                <div class="flipdown">
+                  <div id="first-flipdown" class="flipdown"></div>
                 </div>
               </div>
             </div>
           </div>
-          <div data-option-detail="2" class="col-9 bg-white option-details">
-            <div class="bg-white position-relative">
-              <div
-                class="option-details-title bg-danger fs-3 d-inline-block px-5 py-2 text-white mx-3"
-              >
-                <div class="">پیشنهاد شگفت انگیز</div>
-              </div>
+        </div>
+        <div data-option-detail="2" class="first-column option-details">
+          <div class="card-details">
+            <div class="option-details-title">
+              <div class="">پیشنهاد شگفت انگیز</div>
             </div>
-            <div class="d-flex justify-content-between mt-5">
-              <img class="w-100" src="" alt="option-image" />
-              <div class="w-100 px-5">
-                <div class="option-detail-name fs-4">
-                  تلویزیون سه بعدی سامسونگ
+          </div>
+          <div class="card-option-details">
+            <img class="option-details-image" src="" alt="option-image" />
+            <div class="option-details-info">
+              <div class="option-detail-name">تلویزیون سه بعدی سامسونگ</div>
+              <div class="option-detail-info">
+                <div class="detail-last-info">
+                  <div class="last-info-price">1,054,000</div>
+                  <div class="last-info-text">تومان</div>
                 </div>
-                <div class="my-5">
-                  <div class="d-flex align-items-center fs-5">
-                    <div class="text-decoration-line-through">1,054,000</div>
-                    <div class="me-2 text-danger">تومان</div>
-                  </div>
-                  <div class="d-flex align-items-center fs-4 mt-2">
-                    <div class="fw-bold">1,200,000</div>
-                    <div class="me-2 text-success">تومان</div>
-                  </div>
+                <div class="detail-current-info">
+                  <div class="current-info-price">1,200,000</div>
+                  <div class="current-info-text">تومان</div>
                 </div>
+              </div>
 
-                <hr class="w-100 text-black" />
-                <div>
-                  <div class="text-center text-secondary">
-                    زمان باقیمانده تا پایان تخفیف
-                  </div>
-                  <div class="flipdown">
-                    <div id="second-flipdown" class="flipdown mt-3"></div>
-                  </div>
+              <hr />
+              <div>
+                <div class="card-option-timing">
+                  زمان باقیمانده تا پایان تخفیف
+                </div>
+                <div class="flipdown">
+                  <div id="second-flipdown" class="flipdown"></div>
                 </div>
               </div>
             </div>
           </div>
-          <div data-option-detail="3" class="col-9 bg-white option-details">
-            <div class="bg-white position-relative">
-              <div
-                class="option-details-title bg-danger fs-3 d-inline-block px-5 py-2 text-white mx-3"
-              >
-                <div class="">پیشنهاد شگفت انگیز</div>
-              </div>
+        </div>
+        <div data-option-detail="3" class="first-column option-details">
+          <div class="card-details">
+            <div class="option-details-title">
+              <div class="">پیشنهاد شگفت انگیز</div>
             </div>
-            <div class="d-flex justify-content-between mt-5">
-              <img class="w-100" src="" alt="option-image" />
-              <div class="w-100 px-5">
-                <div class="option-detail-name fs-4">موبایل لمسی Apple</div>
-                <div class="my-5">
-                  <div class="d-flex align-items-center fs-5">
-                    <div class="text-decoration-line-through">1,054,000</div>
-                    <div class="me-2 text-danger">تومان</div>
-                  </div>
-                  <div class="d-flex align-items-center fs-4 mt-2">
-                    <div class="fw-bold">1,200,000</div>
-                    <div class="me-2 text-success">تومان</div>
-                  </div>
+          </div>
+          <div class="card-option-details">
+            <img class="option-details-image" src="" alt="option-image" />
+            <div class="option-details-info">
+              <div class="option-detail-name">موبایل لمسی Apple</div>
+              <div class="option-detail-info">
+                <div class="detail-last-info">
+                  <div class="last-info-price">1,054,000</div>
+                  <div class="last-info-text">تومان</div>
                 </div>
+                <div class="detail-current-info">
+                  <div class="current-info-price">1,200,000</div>
+                  <div class="current-info-text">تومان</div>
+                </div>
+              </div>
 
-                <hr class="w-100 text-black" />
-                <div>
-                  <div class="text-center text-secondary">
-                    زمان باقیمانده تا پایان تخفیف
-                  </div>
-                  <div class="flipdown">
-                    <div id="third-flipdown" class="flipdown mt-3"></div>
-                  </div>
+              <hr />
+              <div>
+                <div class="card-option-timing">
+                  زمان باقیمانده تا پایان تخفیف
+                </div>
+                <div class="flipdown">
+                  <div id="third-flipdown" class="flipdown"></div>
                 </div>
               </div>
             </div>
           </div>
-          <div data-option-detail="4" class="col-9 bg-white option-details">
-            <div class="bg-white position-relative">
-              <div
-                class="option-details-title bg-danger fs-3 d-inline-block px-5 py-2 text-white mx-3"
-              >
-                <div class="">پیشنهاد شگفت انگیز</div>
-              </div>
+        </div>
+        <div data-option-detail="4" class="first-column option-details">
+          <div class="card-details">
+            <div class="option-details-title">
+              <div class="">پیشنهاد شگفت انگیز</div>
             </div>
-            <div class="d-flex justify-content-between mt-5">
-              <img class="w-100" src="" alt="option-image" />
-              <div class="w-100 px-5">
-                <div class="option-detail-name fs-4">موبایل نوکیا</div>
-                <div class="my-5">
-                  <div class="d-flex align-items-center fs-5">
-                    <div class="text-decoration-line-through">1,054,000</div>
-                    <div class="me-2 text-danger">تومان</div>
-                  </div>
-                  <div class="d-flex align-items-center fs-4 mt-2">
-                    <div class="fw-bold">1,200,000</div>
-                    <div class="me-2 text-success">تومان</div>
-                  </div>
+          </div>
+          <div class="card-option-details">
+            <img class="option-details-image" src="" alt="option-image" />
+            <div class="option-details-info">
+              <div class="option-detail-name">موبایل نوکیا</div>
+              <div class="option-detail-info">
+                <div class="detail-last-info">
+                  <div class="last-info-price">1,054,000</div>
+                  <div class="last-info-text">تومان</div>
                 </div>
+                <div class="detail-current-info">
+                  <div class="current-info-price">1,200,000</div>
+                  <div class="current-info-text">تومان</div>
+                </div>
+              </div>
 
-                <hr class="w-100 text-black" />
-                <div>
-                  <div class="text-center text-secondary">
-                    زمان باقیمانده تا پایان تخفیف
-                  </div>
-                  <div class="flipdown">
-                    <div id="fourth-flipdown" class="flipdown mt-3"></div>
-                  </div>
+              <hr />
+              <div>
+                <div class="card-option-timing">
+                  زمان باقیمانده تا پایان تخفیف
+                </div>
+                <div class="flipdown">
+                  <div id="fourth-flipdown" class="flipdown"></div>
                 </div>
               </div>
             </div>
           </div>
-          <div data-option-detail="5" class="col-9 bg-white option-details">
-            <div class="bg-white position-relative">
-              <div
-                class="option-details-title bg-danger fs-3 d-inline-block px-5 py-2 text-white mx-3"
-              >
-                <div class="">پیشنهاد شگفت انگیز</div>
-              </div>
+        </div>
+        <div data-option-detail="5" class="first-column option-details">
+          <div class="card-details">
+            <div class="option-details-title">
+              <div class="">پیشنهاد شگفت انگیز</div>
             </div>
-            <div class="d-flex justify-content-between mt-5">
-              <img class="w-100" src="" alt="option-image" />
-              <div class="w-100 px-5">
-                <div class="option-detail-name fs-4">دوربین عکسبرداری کانن</div>
-                <div class="my-5">
-                  <div class="d-flex align-items-center fs-5">
-                    <div class="text-decoration-line-through">1,054,000</div>
-                    <div class="me-2 text-danger">تومان</div>
-                  </div>
-                  <div class="d-flex align-items-center fs-4 mt-2">
-                    <div class="fw-bold">1,200,000</div>
-                    <div class="me-2 text-success">تومان</div>
-                  </div>
+          </div>
+          <div class="card-option-details">
+            <img class="option-details-image" src="" alt="option-image" />
+            <div class="option-details-info">
+              <div class="option-detail-name">دوربین عکسبرداری کانن</div>
+              <div class="option-detail-info">
+                <div class="detail-last-info">
+                  <div class="last-info-price">1,054,000</div>
+                  <div class="last-info-text">تومان</div>
                 </div>
+                <div class="detail-current-info">
+                  <div class="current-info-price">1,200,000</div>
+                  <div class="current-info-text">تومان</div>
+                </div>
+              </div>
 
-                <hr class="w-100 text-black" />
-                <div>
-                  <div class="text-center text-secondary">
-                    زمان باقیمانده تا پایان تخفیف
-                  </div>
-                  <div class="flipdown">
-                    <div id="fifth-flipdown" class="flipdown mt-3"></div>
-                  </div>
+              <hr />
+              <div>
+                <div class="card-option-timing">
+                  زمان باقیمانده تا پایان تخفیف
+                </div>
+                <div class="flipdown">
+                  <div id="fifth-flipdown" class="flipdown"></div>
                 </div>
               </div>
             </div>
           </div>
-          <div data-option-detail="6" class="col-9 bg-white option-details">
-            <div class="bg-white position-relative">
-              <div
-                class="option-details-title bg-danger fs-3 d-inline-block px-5 py-2 text-white mx-3"
-              >
-                <div class="">پیشنهاد شگفت انگیز</div>
-              </div>
+        </div>
+        <div data-option-detail="6" class="first-column option-details">
+          <div class="card-details">
+            <div class="option-details-title">
+              <div class="">پیشنهاد شگفت انگیز</div>
             </div>
-            <div class="d-flex justify-content-between mt-5">
-              <img class="w-100" src="" alt="option-image" />
-              <div class="w-100 px-5">
-                <div class="option-detail-name fs-4">
-                  موبایل اندرویدی samsung
+          </div>
+          <div class="card-option-details">
+            <img class="option-details-image" src="" alt="option-image" />
+            <div class="option-details-info">
+              <div class="option-detail-name">موبایل اندرویدی samsung</div>
+              <div class="option-detail-info">
+                <div class="detail-last-info">
+                  <div class="last-info-price">1,054,000</div>
+                  <div class="last-info-text">تومان</div>
                 </div>
-                <div class="my-5">
-                  <div class="d-flex align-items-center fs-5">
-                    <div class="text-decoration-line-through">1,054,000</div>
-                    <div class="me-2 text-danger">تومان</div>
-                  </div>
-                  <div class="d-flex align-items-center fs-4 mt-2">
-                    <div class="fw-bold">1,200,000</div>
-                    <div class="me-2 text-success">تومان</div>
-                  </div>
+                <div class="detail-current-info">
+                  <div class="current-info-price">1,200,000</div>
+                  <div class="current-info-text">تومان</div>
                 </div>
+              </div>
 
-                <hr class="w-100 text-black" />
-                <div>
-                  <div class="text-center text-secondary">
-                    زمان باقیمانده تا پایان تخفیف
-                  </div>
-                  <div class="flipdown">
-                    <div id="sixth-flipdown" class="flipdown mt-3"></div>
-                  </div>
+              <hr />
+              <div>
+                <div class="card-option-timing">
+                  زمان باقیمانده تا پایان تخفیف
+                </div>
+                <div class="flipdown">
+                  <div id="sixth-flipdown" class="flipdown"></div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- options -->
-          <div class="col-3 p-0">
-            <div class="bg-light h-100 position-relative">
-              <div
-                onclick="handleShowDetails(1)"
-                data-option="1"
-                class="options active"
-              >
-                تلویزیون سامسونگ 50 اینچ
-              </div>
-              <div
-                onclick="handleShowDetails(2)"
-                data-option="2"
-                class="options"
-              >
-                تلویزیون سه بعدی سامسونگ
-              </div>
-              <div
-                onclick="handleShowDetails(3)"
-                data-option="3"
-                class="options"
-              >
-                موبایل لمسی Apple
-              </div>
-              <div
-                onclick="handleShowDetails(4)"
-                data-option="4"
-                class="options"
-              >
-                موبایل نوکیا
-              </div>
-              <div
-                onclick="handleShowDetails(5)"
-                data-option="5"
-                class="options"
-              >
-                دوربین عکسبرداری کانن
-              </div>
-              <div
-                onclick="handleShowDetails(6)"
-                data-option="6"
-                class="options"
-              >
-                موبایل اندرویدی samsung
-              </div>
-              <a href="#">
-                <div
-                  class="position-absolute bottom-0 p-2 fs-5 bg-info text-white w-100"
-                >
-                  مشاهده همه شگفت انگیزها
-                </div>
-              </a>
+        </div>
+        <!-- options -->
+
+        <div class="second-column">
+          <div class="card-option-bar">
+            <div
+              onclick="handleShowDetails(1)"
+              data-option="1"
+              class="options active"
+            >
+              <div class="card-option-title">تلویزیون سامسونگ 50 اینچ</div>
             </div>
+            <div onclick="handleShowDetails(2)" data-option="2" class="options">
+              <div class="card-option-title">تلویزیون سه بعدی سامسونگ</div>
+            </div>
+            <div onclick="handleShowDetails(3)" data-option="3" class="options">
+              <div class="card-option-title">موبایل لمسی Apple</div>
+            </div>
+            <div onclick="handleShowDetails(4)" data-option="4" class="options">
+              <div class="card-option-title">موبایل نوکیا</div>
+            </div>
+            <div onclick="handleShowDetails(5)" data-option="5" class="options">
+              <div class="card-option-title">دوربین عکسبرداری کانن</div>
+            </div>
+            <div onclick="handleShowDetails(6)" data-option="6" class="options">
+              <div class="card-option-title">موبایل اندرویدی samsung</div>
+            </div>
+            <a href="#" class="options-link">
+              <div class="card-option-link">مشاهده همه شگفت انگیزها</div>
+            </a>
           </div>
         </div>
       </div>

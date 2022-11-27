@@ -3,7 +3,6 @@ onDOMContentLoaded = (event) => {};
 function handleShowDetails(props) {
   const optionDetails = document.querySelectorAll(".option-details");
   const options = document.querySelectorAll(".options");
-  console.log(options);
   //
   let el = document.querySelector(
     `.option-details[data-option-detail="${props}"]`

@@ -11,8 +11,44 @@ a {
 
 /*  */
 
+.card {
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 40px 40px 0 40px;
+}
+
+.card-details {
+  background-color: white;
+  position: relative;
+}
 .option-details-title {
   border-radius: 0 0 40px 40px;
+  background-color: #ee5661;
+  font-size: large;
+  display: inline-block;
+  width: 220px;
+  text-align: center;
+  padding: 16px 0;
+  white-space: nowrap;
+  color: white;
+  margin: 0 10px 20px 0;
+}
+
+.card-option-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px;
+}
+
+.row {
+  display: flex;
+}
+.first-column {
+  width: 80%;
+}
+
+.second-column {
+  width: 20%;
 }
 
 /* flip down */
@@ -31,12 +67,13 @@ a {
   padding: 12px;
 }
 .active {
-  background-color: #ee5661;
+  background-color: #ee5661 !important;
   color: white;
 }
 
 .option-details {
   display: none;
+  background-color: white;
 }
 .show-details {
   display: unset;
@@ -52,4 +89,116 @@ a {
   height: 50px;
   border-radius: 44px;
   background-color: #ee5661;
+}
+
+.card-option-bar {
+  background-color: #f1f7fa;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.card-option-link {
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  background-color: #07bfd7;
+  color: white;
+  width: 100%;
+}
+/*  */
+
+.circle-button {
+  background-color: #bbb;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.option-detail-name {
+  font-size: 22px;
+}
+
+.option-detail-info {
+  margin: 40px 0;
+}
+
+.detail-last-info {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+.last-info-price {
+  text-decoration: line-through;
+}
+.last-info-text {
+  color: #ee5661;
+  margin-right: 10px;
+}
+.detail-current-info {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.current-info-price {
+  font-weight: bold;
+}
+.current-info-text {
+  color: rgb(111, 147, 91);
+  margin-right: 10px;
+}
+
+.card-option-timing {
+  text-align: center;
+  color: rgb(169, 167, 167);
+  margin: 20px 0;
+}
+
+/* Medium screen devices (768px and above) */
+@media only screen and (max-width: 889px) {
+  .options {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #bbb;
+    margin-left: 6px;
+  }
+
+  .card-option-bar {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  .option-details-image {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .option-details-info {
+    width: 100%;
+  }
+
+  .card-option-title {
+    display: none;
+  }
+
+  .row {
+    display: block;
+  }
+  .first-column {
+    width: 100%;
+  }
+
+  .second-column {
+    width: 100%;
+  }
+  .card-option-details {
+    display: block;
+  }
+  .options-link {
+    display: none;
+  }
 }
