@@ -38,6 +38,18 @@ a {
 .option-details {
   display: none;
 }
-.option-details[data-option-detail="3"] {
+.show-details {
   display: unset;
+}
+
+.active::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: -10px;
+  margin-top: -12px;
+  width: 8px;
+  height: 50px;
+  border-radius: 44px;
+  background-color: #ee5661;
 }

@@ -22,7 +22,10 @@
       <div class="rounded-2 mt-5 overflow-hidden">
         <!-- option details -->
         <div class="row">
-          <div data-option-detail="1" class="col-9 bg-white option-details">
+          <div
+            data-option-detail="1"
+            class="col-9 bg-white option-details show-details"
+          >
             <div class="bg-white position-relative">
               <div
                 class="option-details-title bg-danger fs-3 d-inline-block px-5 py-2 text-white mx-3"
@@ -241,12 +244,48 @@
           <!-- options -->
           <div class="col-3 p-0">
             <div class="bg-light h-100 position-relative">
-              <div class="options active">تلویزیون سامسونگ 50 اینچ</div>
-              <div class="options">تلویزیون سه بعدی سامسونگ</div>
-              <div class="options">موبایل لمسی Apple</div>
-              <div class="options">موبایل نوکیا</div>
-              <div class="options">دوربین عکسبرداری کانن</div>
-              <div class="options">موبایل اندرویدی samsung</div>
+              <div
+                onclick="handleShowDetails(1)"
+                data-option="1"
+                class="options active"
+              >
+                تلویزیون سامسونگ 50 اینچ
+              </div>
+              <div
+                onclick="handleShowDetails(2)"
+                data-option="2"
+                class="options"
+              >
+                تلویزیون سه بعدی سامسونگ
+              </div>
+              <div
+                onclick="handleShowDetails(3)"
+                data-option="3"
+                class="options"
+              >
+                موبایل لمسی Apple
+              </div>
+              <div
+                onclick="handleShowDetails(4)"
+                data-option="4"
+                class="options"
+              >
+                موبایل نوکیا
+              </div>
+              <div
+                onclick="handleShowDetails(5)"
+                data-option="5"
+                class="options"
+              >
+                دوربین عکسبرداری کانن
+              </div>
+              <div
+                onclick="handleShowDetails(6)"
+                data-option="6"
+                class="options"
+              >
+                موبایل اندرویدی samsung
+              </div>
               <a href="#">
                 <div
                   class="position-absolute bottom-0 p-2 fs-5 bg-info text-white w-100"
