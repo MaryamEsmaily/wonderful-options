@@ -1,13 +1,13 @@
 onDOMContentLoaded = (event) => {};
 
 function handleShowDetails(props) {
-  const optionDetails = document.querySelectorAll(".option-details");
-  const options = document.querySelectorAll(".options");
+  const optionDetails = document.querySelectorAll(".selected-option-details");
+  const options = document.querySelectorAll(".option");
   //
   let el = document.querySelector(
-    `.option-details[data-option-detail="${props}"]`
+    `.selected-option-details[data-option-detail="${props}"]`
   );
-  let option = document.querySelector(`.options[data-option="${props}"]`);
+  let option = document.querySelector(`.option[data-option="${props}"]`);
   //
   el.classList.add(`show-details`);
   option.classList.add(`active`);
