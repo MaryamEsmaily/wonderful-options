@@ -14,11 +14,15 @@ a {
 .card {
   overflow: hidden;
   border-radius: 10px;
+  width: 100%;
+  max-width: 1140px;
   margin: 40px 40px 0 40px;
+}
+.option-details {
+  background-color: #f5f5f5;
 }
 
 .card-details {
-  background-color: white;
   position: relative;
 }
 .option-details-title {
@@ -53,6 +57,13 @@ a {
 
 /* flip down */
 
+/*  */
+
+.flipdown.flipdown__theme-dark {
+  width: fit-content;
+  display: inline-block;
+}
+
 .flipdown .rotor-group-heading {
   display: none;
 }
@@ -65,6 +76,7 @@ a {
 
 .options {
   padding: 12px;
+  cursor: pointer;
 }
 .active {
   background-color: #ee5661 !important;
@@ -73,7 +85,6 @@ a {
 
 .option-details {
   display: none;
-  background-color: white;
 }
 .show-details {
   display: unset;
@@ -86,7 +97,7 @@ a {
   right: -10px;
   margin-top: -12px;
   width: 8px;
-  height: 50px;
+  height: 46px;
   border-radius: 44px;
   background-color: #ee5661;
 }
@@ -117,6 +128,10 @@ a {
 
 .option-detail-name {
   font-size: 22px;
+}
+
+.option-timing-header {
+  margin: 20px 0;
 }
 
 .option-detail-info {
@@ -153,11 +168,71 @@ a {
 .card-option-timing {
   text-align: center;
   color: rgb(169, 167, 167);
-  margin: 20px 0;
+}
+
+.option-details-image {
+  width: 300px;
+  height: 300px;
+}
+
+/*  count down */
+
+.flipdown .rotor-group:nth-child(n + 2):nth-child(-n + 3):before {
+  bottom: 8px !important;
+  left: 80px !important;
+  width: 5px !important;
+  height: 5px !important;
+}
+
+.flipdown .rotor-group:nth-child(n + 2):nth-child(-n + 3):after {
+  bottom: 25px !important;
+  left: 80px !important;
+  width: 5px !important;
+  height: 5px !important;
+}
+
+.flipdown .rotor {
+  width: 30px !important;
+  height: 40px !important;
+}
+
+.flipdown .rotor-top,
+.flipdown .rotor-bottom {
+  width: 30px !important;
+  height: 20px !important;
+}
+
+.flipdown .rotor-leaf {
+  width: 30px !important;
+  height: 40px !important;
+}
+
+.flipdown .rotor-leaf-front,
+.flipdown .rotor-leaf-rear {
+  width: 30px !important;
+  height: 20px !important;
+}
+
+.flipdown .rotor-leaf-front {
+  line-height: 40px !important;
+}
+
+.flipdown .rotor-top {
+  line-height: 40px !important;
+}
+
+.flipdown .rotor:after {
+  width: 30px !important;
+  height: 20px !important;
 }
 
 /* Medium screen devices (768px and above) */
-@media only screen and (max-width: 889px) {
+@media only screen and (max-width: 1198px) {
+  .card {
+    width: 100%;
+    margin: 10px 0;
+  }
+
   .options {
     width: 10px;
     height: 10px;
@@ -173,7 +248,6 @@ a {
   }
 
   .option-details-image {
-    width: 100%;
     padding: 0 10px;
   }
 
@@ -196,9 +270,23 @@ a {
     width: 100%;
   }
   .card-option-details {
-    display: block;
+    flex-direction: column;
+    align-items: center;
   }
   .options-link {
     display: none;
+  }
+
+  .detail-last-info,
+  .detail-current-info {
+    justify-content: center;
+  }
+
+  .flipdown .rotor-group:nth-child(n + 2):nth-child(-n + 3):before {
+    left: 70px !important;
+  }
+
+  .flipdown .rotor-group:nth-child(n + 2):nth-child(-n + 3):after {
+    left: 70px !important;
   }
 }
